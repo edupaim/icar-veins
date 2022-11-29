@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+
+<routes>
+  <vType id="vtype0" accel="2.6" decel="4.5" sigma="0.5" length="2.5" minGap="1" maxSpeed="15" departSpeed="13" color="1,1,0"/>
+
+  <route id="route1" edges="gneE4 gneE5.0 gneE5.2180 gneE6"/> <!-- from west to east -->
+
+  <route id="route2" edges="gneE4 gneE5.0 -gneE11 gneE13"/> <!-- from west to south -->
+
+  <route id="route3" edges="gneE4 gneE5.0 -gneE10 gneE14"/> <!-- from west to north -->
+
+  <route id="route4" edges="-gneE6 -gneE5.0 -gneE5.2309 -gneE4"/> <!-- from east to west -->
+     
+  <route id="route5" edges="-gneE6 -gneE5.0 -gneE10 gneE14"/> <!-- from east to north -->
+
+  <route id="route6" edges="-gneE6 -gneE5.0 -gneE11 gneE13"/> <!-- from east to south -->
+
+  <route id="route7" edges="-gneE13 gneE11 -gneE10 gneE14"/> <!-- from south to north -->
+     
+  <route id="route8" edges="-gneE13 gneE11 gneE5.2180 gneE6"/> <!-- from south to east -->
+
+  <route id="route9" edges="-gneE13 gneE11 -gneE5.2309 -gneE4"/> <!-- from south to west -->
+
+  <route id="route10" edges="-gneE14 gneE10 -gneE11 gneE13"/> <!-- from north to south -->
+     
+  <route id="route11" edges="-gneE14 gneE10  gneE5.2180 gneE6"/> <!-- from north to east -->
+
+  <route id="route12" edges="-gneE14 gneE10 -gneE5.2309 -gneE4"/> <!-- from north to west --> 
+  
+  <flow id="flow1" type="vtype0" route="route1" begin="0" period="4" number="3" departLane="0"/> 
+  <!-- BASTA MODIFICAR O ROUTE PARA MUDAR O PERCURSO DOS VEÍCULOS NA SIMULAÇÃO  
+  <flow id="flow1.4" type="vtype0" route="route4" begin="0" period="4" number="4" departLane="0"/>
+  <flow id="flow1.7" type="vtype0" route="route7" begin="0" period="4" number="4" departLane="0"/>
+  <flow id="flow1.10" type="vtype0" route="route10" begin="0" period="4" number="4" departLane="0"/>     
+  
+  <flow id="flow2" type="vtype0" route="route1" begin="1" period="4" number="4" departLane="1"/>
+  <flow id="flow2.4" type="vtype0" route="route4" begin="1" period="4" number="4" departLane="1"/>
+  <flow id="flow2.7" type="vtype0" route="route7" begin="1" period="4" number="4" departLane="1"/>
+  <flow id="flow2.10" type="vtype0" route="route10" begin="1" period="4" number="4" departLane="1"/>
+  
+  <flow id="flow4.2" type="vtype0" route="route2" begin="2" period="4" number="4" departLane="3"/>
+  <flow id="flow4.5" type="vtype0" route="route5" begin="2" period="4" number="4" departLane="3"/>
+  <flow id="flow4.8" type="vtype0" route="route8" begin="2" period="4" number="4" departLane="3"/>
+  <flow id="flow4.11" type="vtype0" route="route11" begin="2" period="4" number="4" departLane="3"/>
+ 
+  <flow id="flow3.3" type="vtype0" route="route3" begin="3" period="4" number="4" departLane="2"/>
+  <flow id="flow3.6" type="vtype0" route="route6" begin="3" period="4" number="4" departLane="2"/>
+  <flow id="flow3.9" type="vtype0" route="route9" begin="3" period="4" number="4" departLane="2"/>
+  <flow id="flow3.12" type="vtype0" route="route12" begin="3" period="4" number="4" departLane="2"/>
+   
+   <flow id="flow1" type="vtype0" route="route1" begin="0" period="4" number="8" departLane="0"/>
+   
+  <flow id="flow1" type="vtype0" route="route1" begin="0" period="4" number="4" departLane="0"/> 
+  <flow id="flow1.2" type="vtype0" route="route2" begin="0" period="4" number="4" departLane="0"/> 
+  <flow id="flow1.3" type="vtype0" route="route3" begin="0" period="4" number="4" departLane="0"/>
+  <flow id="flow1.4" type="vtype0" route="route4" begin="0" period="4" number="4" departLane="0"/>
+  <flow id="flow1.5" type="vtype0" route="route5" begin="0" period="4" number="4" departLane="0"/>
+  <flow id="flow1.6" type="vtype0" route="route6" begin="0" period="4" number="4" departLane="0"/>
+  <flow id="flow1.7" type="vtype0" route="route7" begin="0" period="4" number="4" departLane="0"/>
+  <flow id="flow1.8" type="vtype0" route="route8" begin="0" period="4" number="4" departLane="0"/>
+  <flow id="flow1.9" type="vtype0" route="route9" begin="0" period="4" number="4" departLane="0"/>
+  <flow id="flow1.10" type="vtype0" route="route10" begin="0" period="4" number="4" departLane="0"/>
+  <flow id="flow1.11" type="vtype0" route="route11" begin="0" period="4" number="4" departLane="0"/>
+  <flow id="flow1.12" type="vtype0" route="route12" begin="0" period="4" number="4" departLane="0"/>
+  
+  <flow id="flow2" type="vtype0" route="route1" begin="1" period="4" number="4" departLane="1"/>
+  <flow id="flow2.2" type="vtype0" route="route2" begin="1" period="4" number="4" departLane="1"/> 
+  <flow id="flow2.3" type="vtype0" route="route3" begin="1" period="4" number="4" departLane="1"/>
+  <flow id="flow2.4" type="vtype0" route="route4" begin="1" period="4" number="4" departLane="1"/>
+  <flow id="flow2.5" type="vtype0" route="route5" begin="1" period="4" number="4" departLane="1"/>
+  <flow id="flow2.6" type="vtype0" route="route6" begin="1" period="4" number="4" departLane="1"/>
+  <flow id="flow2.7" type="vtype0" route="route7" begin="1" period="4" number="4" departLane="1"/>
+  <flow id="flow2.8" type="vtype0" route="route8" begin="1" period="4" number="4" departLane="1"/>
+  <flow id="flow2.9" type="vtype0" route="route9" begin="1" period="4" number="4" departLane="1"/>
+  <flow id="flow2.10" type="vtype0" route="route10" begin="1" period="4" number="4" departLane="1"/>
+  <flow id="flow2.11" type="vtype0" route="route11" begin="1" period="4" number="4" departLane="1"/>
+  <flow id="flow2.12" type="vtype0" route="route12" begin="1" period="4" number="4" departLane="1"/>
+ 
+  <flow id="flow4" type="vtype0" route="route1" begin="2" period="4" number="4" departLane="3"/>
+  <flow id="flow4.2" type="vtype0" route="route2" begin="2" period="4" number="4" departLane="3"/>
+  <flow id="flow4.3" type="vtype0" route="route3" begin="2" period="4" number="4" departLane="3"/> 
+  <flow id="flow4.4" type="vtype0" route="route4" begin="2" period="4" number="4" departLane="3"/>
+  <flow id="flow4.5" type="vtype0" route="route5" begin="2" period="4" number="4" departLane="3"/>
+  <flow id="flow4.6" type="vtype0" route="route6" begin="2" period="4" number="4" departLane="3"/>
+  <flow id="flow4.7" type="vtype0" route="route7" begin="2" period="4" number="4" departLane="3"/>
+  <flow id="flow4.8" type="vtype0" route="route8" begin="2" period="4" number="4" departLane="3"/>
+  <flow id="flow4.9" type="vtype0" route="route9" begin="2" period="4" number="4" departLane="3"/>
+  <flow id="flow4.10" type="vtype0" route="route10" begin="2" period="4" number="4" departLane="3"/>
+  <flow id="flow4.11" type="vtype0" route="route11" begin="2" period="4" number="4" departLane="3"/>  
+  <flow id="flow4.12" type="vtype0" route="route12" begin="2" period="4" number="4" departLane="3"/>
+  
+  <flow id="flow3" type="vtype0" route="route1" begin="3" period="4" number="4" departLane="2"/> 
+  <flow id="flow3.2" type="vtype0" route="route2" begin="3" period="4" number="4" departLane="2"/>  
+  <flow id="flow3.3" type="vtype0" route="route3" begin="3" period="4" number="4" departLane="2"/>
+  <flow id="flow3.4" type="vtype0" route="route4" begin="3" period="4" number="4" departLane="2"/>
+  <flow id="flow3.5" type="vtype0" route="route5" begin="3" period="4" number="4" departLane="2"/>
+  <flow id="flow3.6" type="vtype0" route="route6" begin="3" period="4" number="4" departLane="2"/>
+  <flow id="flow3.7" type="vtype0" route="route7" begin="3" period="4" number="4" departLane="2"/>  
+  <flow id="flow3.8" type="vtype0" route="route8" begin="3" period="4" number="4" departLane="2"/>
+  <flow id="flow3.9" type="vtype0" route="route9" begin="3" period="4" number="4" departLane="2"/>
+  <flow id="flow3.10" type="vtype0" route="route10" begin="3" period="4" number="4" departLane="2"/>
+  <flow id="flow3.11" type="vtype0" route="route11" begin="3" period="4" number="4" departLane="2"/>
+  <flow id="flow3.12" type="vtype0" route="route12" begin="3" period="4" number="4" departLane="2"/>
+  
+-->
+
+</routes>

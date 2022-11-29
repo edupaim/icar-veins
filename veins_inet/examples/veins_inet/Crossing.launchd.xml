@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<!-- debug config -->
+<launch>
+	<copy file="Crossing.net.xml" />
+	<copy file="Crossing.rou.xml" />
+	<copy file="Crossing.sumo.cfg" type="config" />
+</launch>
+

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+
+<routes>
+	<vType id="vtSameDirRV0" accel="4.5" decel="2.6" sigma="0.5" length="2.5" minGap="1" speedFactor="normc(1.5,0.5,0.8,2)" maxSpeed="13.89" color="1,1,0"/>
+	<vType id="vtSameDir" accel="4.5" decel="2.6" sigma="0.5" length="2.5" minGap="1" speedFactor="normc(1,0.3,0.5,5)" maxSpeed="24.89" color="1,1,0"/>
+	<vType id="vtOppositeDir" accel="4.5" decel="2.6" sigma="0.5" length="2.5" minGap="1" speedFactor="normc(1.5,0.5,0.8,2)" maxSpeed="13.89" color="1,1,0"/>
+	<vType id="vtDifferentDir" accel="4.5" decel="2.6" sigma="0.5" length="2.5" minGap="1" speedFactor="normc(1.5,0.5,0.8,2)" maxSpeed="13.89" color="1,1,0"/>
+	
+	<route id="route1" edges="gneE4 gneE5.0 gneE5.2180 gneE6"/> <!-- from west to east -->
+	<route id="route2" edges="gneE4 gneE5.0 -gneE11 gneE13"/> <!-- from west to south -->
+	<route id="route4" edges="-gneE6 -gneE5.0 -gneE5.2309 -gneE4"/> <!-- from east to west -->
+	<route id="route7" edges="-gneE13 gneE11 -gneE10 gneE14"/> <!-- from south to north -->
+	<route id="route9" edges="-gneE13 gneE11 -gneE5.2309 -gneE4"/> <!-- from south to west -->
+	
+	<route id="route4menor" edges="-gneE5.2309 -gneE4"/> <!-- from east to west -->
+	<route id="route1menor" edges="gneE4 gneE5.0"/> <!-- from west to east -->
+	  
+	<flow id="flow0" type="vtSameDirRV0" route="route1menor" begin="0" period="1" number="2" departLane="0" lane="0"/>
+
+</routes>
